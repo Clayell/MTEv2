@@ -141,6 +141,7 @@ class workflows:
             print(colormapName)
     
     class NASA_SRTM:
+        tileOffset = -0.5
         topCoord: int
         bottomCoord: int
         leftCoord: int
@@ -177,7 +178,7 @@ class workflows:
                 self.width = img.width
                 self.height = img.height
                 
-                self.offset = img.minima-32768
+                self.offset = img.minima-32768+self.tileOffset
                 self.deformity = (img.maxima)-(img.minima)
                 scaleFactor = 65535/self.deformity
                 print(self.offset)
@@ -256,7 +257,7 @@ class workflows:
 # Heightmap | Top Coord | Left Coord
 # Colormap  | Top Coord | Left Coord
 # /// SCRIPT ///
-# workflow.NGP_3DEP("USGS_13_n26w099_20130911.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
+# workflows.NGP_3DEP("USGS_13_n26w099_20130911.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
 # 
 
-workflows.NASA_SRTM("n24_w098_1arc_v3.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
+workflows.NGP_3DEP("USGS_13_n27w100_20240925.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
