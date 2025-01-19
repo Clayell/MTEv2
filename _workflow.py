@@ -8,6 +8,9 @@ import os
 
 class workflows:
     class NGP_3DEP:
+        modTag: str
+        bodyName: str
+        
         tileOffset = -0.7
         workDir: str
         provider: str
@@ -102,24 +105,36 @@ class workflows:
                 Long = -1*Long
             
             output = []
-            output.append("BoundedDecal\n")
+            output.append(f"@Kopernicus:AFTER[{self.modTag}]\n")
             output.append("{\n")
-            output.append(f"\theightMap = {self.workDir}/{self.coords}_Height.dds\n")
-            output.append(f"\tcolorMap  = {self.workDir}/{self.coords}_Color.dds\n")
-            output.append(f"\toffset = {self.offset}\n")
-            output.append(f"\tdeformity = {self.deformity}\n")
-            output.append(f"\tmaxLong = {Long+1}\n")
-            output.append(f"\tminLong = {Long}\n")
-            output.append(f"\tmaxLat = {Lat}\n")
-            output.append(f"\tminLat = {Lat-1}\n")
-            output.append(f"\torder = 21\n")
+            output.append(f"\t@Body[{self.bodyName}]\n")
+            output.append("\t{\n")
+            output.append("\t\t@PQS\n")
+            output.append("\t\t{\n")
+            output.append("\t\t\t@Mods\n")
+            output.append("\t\t\t{\n")
+            output.append("\t\t\t\tBoundedDecal\n")
+            output.append("\t\t\t\t{\n")
+            output.append(f"\t\t\t\t\theightMap = {self.workDir}/{self.coords}_Height.dds\n")
+            output.append(f"\t\t\t\t\tcolorMap  = {self.workDir}/{self.coords}_Color.dds\n")
+            output.append(f"\t\t\t\t\toffset = {self.offset}\n")
+            output.append(f"\t\t\t\t\tdeformity = {self.deformity}\n")
+            output.append(f"\t\t\t\t\tmaxLong = {Long+1}\n")
+            output.append(f"\t\t\t\t\tminLong = {Long}\n")
+            output.append(f"\t\t\t\t\tmaxLat = {Lat}\n")
+            output.append(f"\t\t\t\t\tminLat = {Lat-1}\n")
+            output.append(f"\t\t\t\t\torder = 21\n")
+            output.append("\t\t\t\t}\n")
+            output.append("\t\t\t}\n")
+            output.append("\t\t}\n")
+            output.append("\t}\n")
             output.append("}\n")
             
             txt = ""
             for line in output:
                 txt += line
             
-            with open(file=f"{self.coords}.txt", mode='w') as file:
+            with open(file=f"{self.coords}.cfg", mode='w') as file:
                 file.write(txt)
         
         def CleanupFiles(self, heightmapName, colormapName):
@@ -127,7 +142,9 @@ class workflows:
             os.remove(f"{colormapName}_color-Sized.tif")
             os.remove(f"{heightmapName}-Corrected.tif")
             
-        def __init__(self, mapName, wd):
+        def __init__(self, mapName, wd, modTag, bodyName):
+            self.modTag = modTag
+            self.bodyName = bodyName
             self.workDir = wd
             self.ExtractData(mapName)
             heightmapName = self.provider+"_"+self.verNum+"_"+self.coords+"_"+self.date
@@ -141,6 +158,9 @@ class workflows:
             print(colormapName)
     
     class NASA_SRTM:
+        modTag: str
+        bodyName: str
+        
         tileOffset = -0.5
         topCoord: int
         bottomCoord: int
@@ -205,26 +225,38 @@ class workflows:
             print("Converting Colormap to DDS")
             sub.run(["nvtt_export", f"{fileName}_color-Sized.tif", "-o", f"{fileName}_Color.dds", "-f 15", "--no-mips"])
             
-        def GenerateConfig(self):
+        def GenerateConfig(self):            
             output = []
-            output.append("BoundedDecal\n")
+            output.append(f"@Kopernicus:AFTER[{self.modTag}]\n")
             output.append("{\n")
-            output.append(f"\theightMap = {self.workDir}/{self.coords}_Height.dds\n")
-            output.append(f"\tcolorMap  = {self.workDir}/{self.coords}_Color.dds\n")
-            output.append(f"\toffset = {self.offset}\n")
-            output.append(f"\tdeformity = {self.deformity}\n")
-            output.append(f"\tmaxLong = {self.rightCoord}\n")
-            output.append(f"\tminLong = {self.leftCoord}\n")
-            output.append(f"\tmaxLat = {self.topCoord}\n")
-            output.append(f"\tminLat = {self.bottomCoord}\n")
-            output.append(f"\torder = 21\n")
+            output.append(f"\t@Body[{self.bodyName}]\n")
+            output.append("\t{\n")
+            output.append("\t\t@PQS\n")
+            output.append("\t\t{\n")
+            output.append("\t\t\t@Mods\n")
+            output.append("\t\t\t{\n")
+            output.append("\t\t\t\tBoundedDecal\n")
+            output.append("\t\t\t\t{\n")
+            output.append(f"\t\t\t\t\theightMap = {self.workDir}/{self.coords}_Height.dds\n")
+            output.append(f"\t\t\t\t\tcolorMap  = {self.workDir}/{self.coords}_Color.dds\n")
+            output.append(f"\t\t\t\t\toffset = {self.offset}\n")
+            output.append(f"\t\t\t\t\tdeformity = {self.deformity}\n")
+            output.append(f"\t\t\t\t\tmaxLong = {self.rightCoord}\n")
+            output.append(f"\t\t\t\t\tminLong = {self.leftCoord}\n")
+            output.append(f"\t\t\t\t\tmaxLat = {self.topCoord}\n")
+            output.append(f"\t\t\t\t\tminLat = {self.bottomCoord}\n")
+            output.append(f"\t\t\t\t\torder = 21\n")
+            output.append("\t\t\t\t}\n")
+            output.append("\t\t\t}\n")
+            output.append("\t\t}\n")
+            output.append("\t}\n")
             output.append("}\n")
             
             txt = ""
             for line in output:
                 txt += line
             
-            with open(file=f"{self.coords}.txt", mode='w') as file:
+            with open(file=f"{self.coords}.cfg", mode='w') as file:
                 file.write(txt)
         
         def CleanupFiles(self, heightmapName, colormapName):
@@ -232,7 +264,9 @@ class workflows:
             os.remove(f"{colormapName}_color-Sized.tif")
             os.remove(f"{heightmapName}-Corrected.tif")
             
-        def __init__(self, mapName, wd):
+        def __init__(self, mapName, wd, modTag, bodyName):
+            self.modTag = modTag
+            self.bodyName = bodyName
             self.workDir = wd
             self.ExtractData(mapName)
             self.ProcessHeightmap(mapName)
@@ -260,4 +294,4 @@ class workflows:
 # workflows.NGP_3DEP("USGS_13_n26w099_20130911.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
 # 
 
-workflows.NGP_3DEP("USGS_13_n27w100_20240925.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
+workflows.NGP_3DEP("USGS_1_n27w100_20240925.tif", "Sol-Addons/PluginData/03_Earth/Tiles", "SolSystem", "Earth")
