@@ -281,8 +281,10 @@ class workflows:
 # 30 m per pixel, 3601x3601~, 6.19MB colormap, 24.7MB heightmap, 30.2MB per tile
 # Heightmap | Bottom Coord | Left Coord
 # Colormap  | Top Coord    | Left Coord
+#
+# workflows.NASA_SRTM(HEIGHTMAP_NAME, TEXTURE_PATH, MOD_TAG, BODY_NAME)
 # /// SCRIPT ///
-# workflows.NASA_SRTM("n24_w098_1arc_v3.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
+# workflows.NASA_SRTM("n24_w098_1arc_v3.tif", "Sol-Addons/PluginData/03_Earth/Tiles", "RealSolarSystem", Earth)
 # 
 
 
@@ -290,8 +292,9 @@ class workflows:
 # 10m per pixel, 10812x10812~, 55.7MB colormap, 222MB heightmap, 277.7MB per tile
 # Heightmap | Top Coord | Left Coord
 # Colormap  | Top Coord | Left Coord
+# workflows.NASA_SRTM(HEIGHTMAP_NAME, TEXTURE_PATH, MOD_TAG, BODY_NAME)
 # /// SCRIPT ///
-# workflows.NGP_3DEP("USGS_13_n26w099_20130911.tif", "Sol-Addons/PluginData/03_Earth/Tiles")
+# workflows.NGP_3DEP("USGS_13_n26w099_20130911.tif", "Sol-Addons/PluginData/03_Earth/Tiles", "RealSolarSystem", Earth)
 # 
 
 workflows.NGP_3DEP("USGS_1_n27w100_20240925.tif", "Sol-Addons/PluginData/03_Earth/Tiles", "SolSystem", "Earth")
