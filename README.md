@@ -20,3 +20,13 @@ This MTEv2 pack contains the entirety of Florida (excluding the pan handle) incl
 
 This MTEv2 pack contains a large portion of Southern Texas and Northern Mexico, including Brownsville and Starbase TX.
 ![460180310-d148cba6-009f-47bb-bb5e-10ed1b383c23](https://github.com/user-attachments/assets/bb69a070-5d10-4f25-95af-010666baad1f)
+
+## Community MTE v2 Packs
+
+**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/1.0
+
+Created by: ezsnack
+
+This MTEv2 pack contains the majority of southern Nevada, there are multiple Airforce bases in the area including the famous Groom Lake (Area 51) and other interesting landmarks like nuclear tests craters and Los Angeles.
+
+![SouthernNevada](https://github.com/user-attachments/assets/39f78628-99c1-4b85-8dc0-aa683daae062)
