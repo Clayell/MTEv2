@@ -23,7 +23,7 @@ This MTEv2 pack contains a large portion of Southern Texas and Northern Mexico, 
 
 ## Community MTE v2 Packs
 
-**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/1.0
+**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/SouthernNevada-V1.0
 
 Created by: ezsnack
 
