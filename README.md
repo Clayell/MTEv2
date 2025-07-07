@@ -23,10 +23,14 @@ This MTEv2 pack contains a large portion of Southern Texas and Northern Mexico, 
 
 ## Community MTE v2 Packs
 
-**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/SouthernNevada-V1.0
-
 Created by: ezsnack
 
-This MTEv2 pack contains the majority of southern Nevada, there are multiple Airforce bases in the area including the famous Groom Lake (Area 51) and other interesting landmarks like nuclear tests craters and Los Angeles.
+**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/SouthernNevada-V1.0
 
+This MTEv2 pack contains the majority of southern Nevada, there are multiple Airforce bases in the area including the famous Groom Lake (Area 51) and other interesting landmarks like nuclear tests craters and Los Angeles.
 ![SouthernNevada](https://github.com/user-attachments/assets/39f78628-99c1-4b85-8dc0-aa683daae062)
+
+**Central Italy** - https://github.com/ezsnackeur/MTEv2/releases/tag/Central_Italy-V1.0
+
+This MTEv2 pack contains all of central Italy, explore the italian coastline, the Appennini mountain range and many dormant volcanoes.
+![screenshot68](https://github.com/user-attachments/assets/5c073fc9-ad1e-4ca1-ae0b-46e57807052b)
