@@ -2,6 +2,11 @@ This repository holds all information related to MTEv2, check out the wiki on in
 
 MTEv2 requires https://github.com/CharonSSS/AdvancedPQSTools to function properly
 
+Also navigate to Gamedata/Sol-Configs/03_Earth-System/03_Earth/Earth-Kopernicus.cfg, scroll down to the PQS category and set:  
+maxLevel = 16, minDetailDistance = 16.
+
+Its also recommended to disable the scatters by deleting Earth-ParallaxScatters.cfg in the same folder.
+
 
 
 ## Official MTE v2 Packs
