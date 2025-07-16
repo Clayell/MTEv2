@@ -30,12 +30,27 @@ This MTEv2 pack contains a large portion of Southern Texas and Northern Mexico, 
 
 Created by: ezsnack
 
-**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/SouthernNevada-V1.0
+**Tanegashima** - https://github.com/ezsnackeur/MTEv2/releases/tag/Tanegashima-V1.0
 
-This MTEv2 pack contains the majority of southern Nevada, there are multiple Airforce bases in the area including the famous Groom Lake (Area 51) and other interesting landmarks like nuclear tests craters and Los Angeles.
-![SouthernNevada](https://github.com/user-attachments/assets/39f78628-99c1-4b85-8dc0-aa683daae062)
+This MTEv2 pack contains the Tanegashima Launch Site and surrounding area.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aee8db57-4128-4e8d-bb2b-1cd795a5fb44" />
+
+**Xichang** - https://github.com/ezsnackeur/MTEv2/releases/tag/Xichang-V1.0
+
+This MTEv2 pack contains the Xichang Launch Site and surrounding area.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ee0421e-08f9-4070-b0da-70ae0b1ac2c2" />
+
+**Semnan** - https://github.com/ezsnackeur/MTEv2/releases/tag/Semnan-V1.0
+
+This MTEv2 pack contains the Semnan Launch Site and surrounding area.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec89cb5b-b2dd-4d23-b2b7-45cc96867c6c" />
 
 **Central Italy** - https://github.com/ezsnackeur/MTEv2/releases/tag/Central_Italy-V1.0
 
 This MTEv2 pack contains all of central Italy, explore the italian coastline, the Appennini mountain range and many dormant volcanoes.
 ![screenshot68](https://github.com/user-attachments/assets/5c073fc9-ad1e-4ca1-ae0b-46e57807052b)
+
+**Southern Nevada** - https://github.com/ezsnackeur/MTEv2/releases/tag/SouthernNevada-V1.0
+
+This MTEv2 pack contains the majority of southern Nevada, there are multiple Airforce bases in the area including the famous Groom Lake (Area 51) and other interesting landmarks like nuclear tests craters and Los Angeles.
+![SouthernNevada](https://github.com/user-attachments/assets/39f78628-99c1-4b85-8dc0-aa683daae062)
