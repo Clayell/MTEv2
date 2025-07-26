@@ -30,6 +30,11 @@ This MTEv2 pack contains a large portion of Southern Texas and Northern Mexico, 
 
 Created by: ezsnack
 
+**Vostochny-Svobodny** - https://github.com/ezsnackeur/MTEv2/releases/tag/Vostochny-Svobodny-V1.0
+
+This MTEv2 pack contains the Vostochny-Svobodny Cosmodrome and surrounding area as well as an alternative winter look.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/514be451-c72b-46ec-a90b-3b4c635e35a7" />
+
 **Tanegashima** - https://github.com/ezsnackeur/MTEv2/releases/tag/Tanegashima-V1.0
 
 This MTEv2 pack contains the Tanegashima Launch Site and surrounding area.
